@@ -60,36 +60,35 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-import onepx from './directive/onepx'
+import HelloWorld from "./components/HelloWorld.vue";
 export default {
-  name: 'app',
+  name: "app",
   components: {
     HelloWorld
   },
-  directives: onepx,
   mounted() {
-    this.$el.querySelector('input').innerHTML = '<p>some text you can\'t see</p>'
+    this.$el.querySelector("input").innerHTML =
+      "<p>some text you can't see</p>";
   }
-}
+};
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
 }
-.block{
+.block {
   width: 100%;
   height: auto;
   display: flex;
   justify-content: space-around;
 }
-.demo{
+.demo {
   width: 200px;
   height: 70px;
   background: #eee;
@@ -104,33 +103,33 @@ export default {
   position: relative;
   border: 1px solid rgb(44, 62, 80);
 }
-.radius{
+.radius {
   border-radius: 10px;
 }
 
-.margin{
+.margin {
   margin-left: 30px;
 }
-.padding{
+.padding {
   padding-right: 40px;
 }
-.border-box{
+.border-box {
   box-sizing: border-box;
   padding: 10px;
   margin: 10px;
 }
-.content-box{
+.content-box {
   box-sizing: content-box;
   padding: 10px;
   margin: 10px;
 }
-.translate{
-  transform: translate(10px)
+.translate {
+  transform: translate(10px);
 }
-.scale{
-  transform: scale(.8, .8)
+.scale {
+  transform: scale(0.8, 0.8);
 }
-.rotate{
-  transform: rotateX(30deg)
+.rotate {
+  transform: rotateX(30deg);
 }
 </style>

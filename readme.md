@@ -28,5 +28,44 @@ demo地址：
 
 ## 安装方法
 
+找到`'@/directive/onepx'`，然后`Vue.use`即可，暂时不会放到npm上。
+```javascript
+import onepx from '@/directive/onepx';
 
+Vue.use(onepx);
+```
 
+然后直接在业务中就可以使用`v-onepx`来给dom添加一像素边框了；
+
+## 使用方法
+
+正常使用
+```vue
+<template>
+    <div v-onepx></div>
+</template>
+```
+
+条件渲染
+```vue
+<template>
+    <div v-onepx="false"></div>
+</template>
+```
+
+自定义颜色
+```vue
+<template>
+    <div v-onepx data-border-color="red"></div>
+</template>
+
+<!-- 或者css设置 -->
+<template>
+    <div style="border-color: red;"></div>
+</template>
+
+```
+
+# todo list
+
+* 有想法通过class查找、MutationObserver来监听DOM变化来更新的方法来实现一个通用的一像素解决方案。
