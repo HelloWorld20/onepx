@@ -24,7 +24,7 @@
  */
 ```
 
-demo地址：
+demo地址：[https://helloworld20.github.io/onepx/dist](https://helloworld20.github.io/onepx/dist)
 
 ## 安装方法
 
