@@ -26,6 +26,9 @@
 
 demo地址：[https://helloworld20.github.io/onepx/dist](https://helloworld20.github.io/onepx/dist)
 
+![当然移动端才能看到效果](http://192.168.43.108:3000/onepx/src/assets/onepx.png)
+
+
 ## 安装方法
 
 找到`'@/directive/onepx'`，然后`Vue.use`即可，暂时不会放到npm上。
