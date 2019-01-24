@@ -9,7 +9,6 @@
  * v-onepx-l: 左边
  * v-onepx-r: 右边
  * data-border-color="#9d9d9d" 给边框加上自定义颜色
- * data-border-outset="true" 使用boxshadow来实现边框，是往外发散的，有些特殊情况有用
  * 传参：如果参数为falsy（除了undefined），则不渲染border，undefined默认渲染
  *
  * 自定义颜色：先读取标签属性data-border-color => 再读取css的border-color值 => 最后使用默认颜色
@@ -100,10 +99,11 @@ function onepx(el, binding, side = '') {
                 pointer-events: none;
             `;
 
-  let inset = el.getAttribute('data-border-outset') === 'true';
-  onepxStyle += inset ? `box-shadow: 0 0 0 1px ${borderColor};` :
-    `border${side}: 1px solid ${borderColor};`;
-
+  if (side) {
+    onepxStyle += `border${side}: 1px solid ${borderColor};`;
+  } else {
+    onepxStyle += `box-shadow: 0 0 0 1px ${borderColor};`;
+  }
 
   let onepx = el.querySelector(`.${id}`);
   if (onepx) {
@@ -138,8 +138,8 @@ function debug(el) {
 }
 
 
-export default function (Vue, options) {
+export default function (Vue) {
   Vue.mixin({
     directives: directive
-  })
-};
+  });
+}

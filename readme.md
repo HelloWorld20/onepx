@@ -12,7 +12,6 @@
  * v-onepx-l: 左边
  * v-onepx-r: 右边
  * data-border-color="#9d9d9d" 给边框加上自定义颜色
- * data-border-outset="true" 使用boxshadow来实现边框，是往外发散的，有些特殊情况有用
  * 传参：如果参数为falsy（除了undefined），则不渲染border，undefined默认渲染
  *
  * 自定义颜色：先读取标签属性data-border-color => 再读取css的border-color值 => 最后使用默认颜色

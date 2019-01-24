@@ -83,7 +83,21 @@ export default {
             h('div', {
               domProps: {
                 className: v.title ? '' : `default radius ${v.name}`,
-                innerText: v.title ? '原生' : v.name
+                innerText: v.title ? '原生1px' : v.name
+              }
+            })
+            ,
+            v.tag === 'input' ?
+            h('input', {
+              domProps: {
+                className: `device radius ${v.name}`,
+                value: v.name
+              }
+            }) :
+            h('div', {
+              domProps: {
+                className: v.title ? '' : `device radius harf ${v.name}`,
+                innerText: v.title ? '原生0.5px' : v.name
               }
             })
             ,
@@ -97,7 +111,7 @@ export default {
             }) :
             h('div', {
               domProps: {
-                className: v.title ? '' : `demo radius ${v.name}`,
+                className: v.title ? '' : `demo radius`,
                 innerText: v.title ? '指令' : v.name
               },
               directives: [{name: v.directivesName}]
@@ -187,15 +201,26 @@ export default {
   display: flex;
   justify-content: space-around;
 }
+div.harf{
+  border-width: .5px;
+}
 .demo {
-  width: 200px;
+  width: 150px;
   height: 70px;
   background: #eee;
   margin: 10px auto;
   position: relative;
 }
+.device{
+  width: 150px;
+  height: 70px;
+  background: #eee;
+  margin: 10px auto;
+  position: relative;
+  border: 0.5px solid rgb(44, 62, 80);
+}
 .default {
-  width: 200px;
+  width: 150px;
   height: 70px;
   background: #eee;
   margin: 10px auto;
