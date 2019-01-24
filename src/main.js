@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import App from './App.vue';
-import onepx from './directive/onepx';
+// import onepx from './directive/onepx';
+import onepx from 'vue-onepx'
 
 Vue.use(onepx);
 

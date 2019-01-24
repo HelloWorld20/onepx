@@ -12,7 +12,8 @@
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
-    "vue": "^2.5.17"
+    "vue": "^2.5.17",
+    "vue-onepx": "https://github.com/HelloWorld20/onepx.git"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.1.0",

@@ -31,7 +31,12 @@ demo地址：[https://helloworld20.github.io/onepx/dist](https://helloworld20.gi
 
 ## 安装方法
 
-找到`'@/directive/onepx'`，然后`Vue.use`即可，暂时不会放到npm上。
+```bash
+yarn add https://github.com/HelloWorld20/onepx.git --save
+```
+
+暂时通过github链接安装，不想推到npm上
+
 ```javascript
 import onepx from '@/directive/onepx';
 

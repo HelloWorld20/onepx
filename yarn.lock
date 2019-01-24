@@ -7082,6 +7082,12 @@ vue-loader@^15.4.2:
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
 
+"vue-onepx@https://github.com/HelloWorld20/onepx.git":
+  version "0.1.0"
+  resolved "https://github.com/HelloWorld20/onepx.git#a2fe96a5f9af2cdd8dd4291877121bfd983c7ecd"
+  dependencies:
+    vue "^2.5.17"
+
 vue-style-loader@^4.1.0:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/vue-style-loader/-/vue-style-loader-4.1.2.tgz#dedf349806f25ceb4e64f3ad7c0a44fba735fcf8"
