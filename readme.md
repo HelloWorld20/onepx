@@ -25,7 +25,7 @@
 
 demo地址：[https://helloworld20.github.io/onepx/dist](https://helloworld20.github.io/onepx/dist)
 
-![当然移动端才能看到效果](http://192.168.43.108:3000/onepx/src/assets/onepx.png)
+![当然移动端才能看到效果](https://helloworld20.github.io/onepx/dist/qrcode.png)
 
 
 ## 安装方法
