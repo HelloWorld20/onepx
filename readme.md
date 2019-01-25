@@ -37,7 +37,7 @@ yarn add https://github.com/HelloWorld20/onepx.git --save
 暂时通过github链接安装，不想推到npm上
 
 ```javascript
-import onepx from '@/directive/onepx';
+import onepx from 'vue-onepx';
 
 Vue.use(onepx);
 ```
