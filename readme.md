@@ -68,7 +68,7 @@ Vue.use(onepx);
 
 <!-- 或者css设置 -->
 <template>
-    <div style="border-color: red;"></div>
+    <div v-onepx style="border-color: red;"></div>
 </template>
 
 ```
