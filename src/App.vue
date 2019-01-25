@@ -1,7 +1,8 @@
 <template>
   <div id="app">
     <div class="block">
-      <div>默认</div>
+      <div>原生1px</div>
+      <div>原生0.5px</div>
       <div>指令</div>
     </div>
     <div class="block">
