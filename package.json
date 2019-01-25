@@ -1,6 +1,6 @@
 {
   "name": "vue-onepx",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A Vue2 directive for one px problem in mobile web broswer!",
   "main": "src/directive/onepx.js",
   "author": "jianghong wei(292701515@qq.com)",

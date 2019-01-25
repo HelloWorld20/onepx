@@ -102,7 +102,7 @@ function onepx(el, binding, side = '') {
   if (side) {
     onepxStyle += `border${side}: 1px solid ${borderColor};`;
   } else {
-    onepxStyle += `box-shadow: 0 0 0 1px ${borderColor};`;
+    onepxStyle += `box-shadow: inset 0 0 0 1px ${borderColor};`;
   }
 
   let onepx = el.querySelector(`.${id}`);

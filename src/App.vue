@@ -70,133 +70,13 @@
 
 
 <script>
-let blockElementConfig = [
-  {
-    name: 'title',
-    title: true
-  },
-  {
-    name: 'bottom',
-    directivesName: 'onepx-b'
-  },
-  {
-    name: 'top',
-    directivesName: 'onepx-t'
-  },
-  {
-    name: 'left',
-    directivesName: 'onepx-l'
-  },
-  {
-    name: 'right',
-    directivesName: 'onepx-r'
-  },
-  {
-    name: 'margin',
-    directivesName: 'onepx'
-  },
-  {
-    name: 'padding',
-    directivesName: 'onepx'
-  },
-  {
-    name: 'border-box',
-    directivesName: 'onepx'
-  },
-  {
-    name: 'content-box',
-    directivesName: 'onepx'
-  },
-  {
-    name: 'translate',
-    directivesName: 'onepx'
-  },
-  {
-    name: 'scale',
-    directivesName: 'onepx'
-  },
-  {
-    name: 'rotate',
-    directivesName: 'onepx'
-  },
-  {
-    name: 'input',
-    tag: 'input',
-    directivesName: 'onepx'
-  },
-  {
-    name: 'rotate',
-    directivesName: 'onepx'
-  }
-];
+
 export default {
   name: "app",
-  // render(h) {
-  //   return h('div', {
-  //       domProps: {
-  //         id: 'app'
-  //       },
-  //     },
-  //     blockElementConfig.map(v => {
-  //       return h('div', {
-  //           domProps: {
-  //             className: 'block'
-  //           }
-  //         },
-  //         [
-  //           v.tag === 'input' ?
-  //           h('input', {
-  //             domProps: {
-  //               className: `default radius ${v.name}`,
-  //               value: v.name
-  //             }
-  //           }) :
-  //           h('div', {
-  //             domProps: {
-  //               className: v.title ? '' : `default radius ${v.name}`,
-  //               innerText: v.title ? '原生1px' : v.name
-  //             }
-  //           })
-  //           ,
-  //           v.tag === 'input' ?
-  //           h('input', {
-  //             domProps: {
-  //               className: `device radius ${v.name}`,
-  //               value: v.name
-  //             }
-  //           }) :
-  //           h('div', {
-  //             domProps: {
-  //               className: v.title ? '' : `device radius harf ${v.name}`,
-  //               innerText: v.title ? '原生0.5px' : v.name
-  //             }
-  //           })
-  //           ,
-  //           v.tag === 'input' ?
-  //           h('input', {
-  //             domProps: {
-  //               className: `demo radius ${v.name}`,
-  //               value: v.name
-  //             },
-  //             directives: [{name: v.directivesName}]
-  //           }) :
-  //           h('div', {
-  //             domProps: {
-  //               className: v.title ? '' : `demo radius ${v.name}`,
-  //               innerText: v.title ? '指令' : v.name
-  //             },
-  //             directives: [{name: v.directivesName}]
-  //           })
-  //         ]
-  //       )
-  //     })
-  //   )
-  // },
   mounted() {
     this.$el.querySelector("input").innerHTML = "<p>some text you can't see</p>";
   }
 };
-// render对应的dom结构如下：
 
 </script>
 
@@ -283,6 +163,6 @@ div.harf{
   transform: scale(0.8, 0.8);
 }
 .rotate {
-  transform: rotateX(30deg);
+  transform: rotateX(60deg);
 }
 </style>
